@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght300;400;500;600;700&display=swap');
+/*header*/
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2,h3,h4,h5,h6{
+    color: black;
+    line-height: 1.3;
+}
+p{
+    margin-bottom: 15px;
+}
+img{
+   
+    vertical-align: middle ;
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsl(0 , 0, 20%);
+    background-color: #e5f2fa;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.page-wrapper{
+    overflow: hidden;
+}
+.container{
+    max-width: 1350px;
+    margin-top: 0;
+   
+}
+.header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+   background-color: rgb(11, 35, 97); 
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.nav li{
+    display: inline-block;
+    margin-left: 35px;
+}
+.nav a{
+    text-transform: capitalize;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(237, 191, 26);
+    transform: color 0.3s ease;  
+}
+.nav a:hover{
+    color: black;
+}
+.nav-toggler{
+    display: none;
+}
+/*home*/
+.home{
+    padding: 30px 50px 60px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 50px;
+}
+.home-text,
+.home-img{
+    grid-column: span 6;
+    align-self: center;
+}
+.home-text h1{
+    font-size: 50px;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    color: rgb(11, 35, 97);
+}  
+.home-text p{
+    margin: 0 0 30px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    background-color: rgb(11, 35, 97);
+    color: rgb(237, 191, 26);
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-family: inherit;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    vertical-align: middle;
+    user-select: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: transparent;
+    color:rgb(11, 35, 97);
+    border-color: rgb(237, 191, 26);
+
+}
+.home-img .circle-wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+.home-img .circle{
+    height: 350px;
+    width: 350px;
+    background-color:rgb(11, 35, 97) ;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+ /*about*/
+.about-img,
+.about-text{
+    grid-column: span 6;
+}
+.section-padding{
+    padding: 60px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.section-title .title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: rgb(237, 191, 26);
+    margin: 0 0 12px;
+    padding: 0 40px;
+    position: relative;
+}
+.section-title h2{
+    color:rgb(11, 35, 97) ;
+}
+.section-title .title::before,
+.section-title .title::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 34px;
+    background-color:rgb(237, 191, 26);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section-title .title::before{
+    left: 0;
+}
+.section-title .title::after{
+    right: 0;
+}
+.section-title .sub-title{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.about .section-title{
+    text-align: left;
+    margin: 0 0 15px;
+}
+.about-img .img-box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: rgb(235, 243, 252);
+    /* bleu clair ou la couleur que tu veux */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(11, 35, 97, 0.15);
+}
+
+.about-img .img-box img {
+    width: 500px;
+    /* taille de l'image à l'intérieur du cercle */
+    height: auto;
+    border-radius: 50%;
+}
+/*Service*/
+/* Section générale */
+.services {
+    background-color: #e5f2fa;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top:  45px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0b2361;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+/* Cartes des services */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    color: #0b2361;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(237, 191, 26);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e66a00;
+}
+/*Contacte*/
+.contact {
+    background-color: #e5f2fa;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0b2361;
+    margin-bottom: 10px;
+}
+
+.contact .section-subtitle {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBE5D;
+    transform: translateY(-4px);
+}
